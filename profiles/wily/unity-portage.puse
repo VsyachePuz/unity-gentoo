@@ -28,7 +28,8 @@ dev-libs/xapian-bindings python
 
 ## In Ubuntu 'qt5[gles2]' is only enabled on arm architectures so far (breaks QtGL on desktop if enabled) and 'qtgui:5[eglfs]' is also explicitly disabled #
 dev-qt/qtcore:5 icu
-dev-qt/qtgui:5 egl evdev ibus -eglfs
+dev-qt/qtgui:5 egl evdev ibus -eglfs gtkstyle
+dev-qt/qtwidgets:5 gtkstyle
 dev-qt/qtmultimedia:5 widgets
 dev-qt/qtopengl:5 egl
 dev-qt/qtquick1:5 webkit
@@ -74,3 +75,37 @@ x11-base/xorg-server dmx xvfb
 x11-libs/libdrm libkms
 x11-libs/libxcb xkb
 x11-misc/x11vnc dummy
+# required by dev-lang/ruby-2.1.7::gentoo
+# required by dev-ruby/rdoc-4.2.2::gentoo[ruby_targets_ruby21]
+# required by dev-lang/ruby-2.0.0_p647-r1::gentoo[rdoc]
+# required by dev-ruby/racc-1.4.14::gentoo[ruby_targets_ruby20]
+>=dev-ruby/rake-11.1.2 ruby_targets_ruby21
+# required by dev-ruby/rdoc-4.2.2::gentoo[ruby_targets_ruby21]
+# required by dev-lang/ruby-2.1.7::gentoo[rdoc]
+# required by dev-ruby/racc-1.4.14::gentoo[ruby_targets_ruby21]
+>=dev-ruby/json-1.8.3 ruby_targets_ruby21
+# required by dev-ruby/rdoc-4.2.2::gentoo[ruby_targets_ruby21]
+# required by dev-lang/ruby-2.1.7::gentoo[rdoc]
+# required by dev-qt/qtwebkit-5.4.2_p1_p0201::unity-gentoo
+# required by unity-base/signon-ui-0.17_p0_p01_p20150810::unity-gentoo
+# required by unity-base/gnome-control-center-signon-0.1.7_p0_p01-r1::unity-gentoo
+# required by net-libs/gnome-online-accounts-3.18.3_p1_p02::unity-gentoo[uoa]
+# required by gnome-base/gvfs-1.28.0::gentoo[gnome-online-accounts]
+# required by sci-geosciences/geocode-glib-3.18.2::gentoo
+# required by gnome-base/gnome-settings-daemon-3.20.0::gnome
+# required by media-sound/banshee-2.9.0_p3_p01::unity-gentoo
+# required by @selected
+# required by @world (argument)
+>=dev-ruby/racc-1.4.14 ruby_targets_ruby21
+# required by dev-lang/ruby-2.1.7::gentoo[rdoc]
+# required by dev-ruby/racc-1.4.14::gentoo[ruby_targets_ruby21]
+>=dev-ruby/rdoc-4.2.2 ruby_targets_ruby21
+# required by dev-util/mono-packaging-tools-0.1.1-r20150918::dotnet
+# required by @selected
+# required by @world (argument)
+>=dev-dotnet/eto-parse-1.4.0-r20150907 nupkg
+# required by dev-dotnet/nunit-2.6.4-r201501110::dotnet
+# required by dev-dotnet/newtonsoft-json-8.0.1_p20151229::dotnet
+# required by @selected
+# required by @world (argument)
+>=dev-dotnet/nant-0.93.5019-r201504210 nupkg

@@ -132,3 +132,4 @@ x11-drivers/xf86-video-nouveau::gentoo
 x11-libs/gtk+::gentoo
 x11-misc/lightdm::gentoo
 x11-misc/lightdm-kde::gentoo
+sys-libs/readline:0/0

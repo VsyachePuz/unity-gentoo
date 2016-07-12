@@ -5,6 +5,7 @@
 EAPI=6
 
 QT5_MODULE="qtbase"
+KEYWORDS="~amd64 ~x86"
 
 inherit qt5-build
 

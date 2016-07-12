@@ -9,6 +9,7 @@ QT5_MODULE="qtbase"
 inherit qt5-build
 
 DESCRIPTION="The D-Bus module for the Qt5 framework"
+KEYWORDS="~amd64 ~x86"
 
 if [[ ${QT5_BUILD_TYPE} == live ]]; then
 	#KEYWORDS=""

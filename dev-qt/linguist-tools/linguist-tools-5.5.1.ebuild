@@ -7,6 +7,7 @@ EAPI=6
 QT5_MODULE="qttools"
 
 inherit qt5-build
+KEYWORDS="~amd64 ~x86"
 
 DESCRIPTION="Tools for working with Qt translation data files"
 

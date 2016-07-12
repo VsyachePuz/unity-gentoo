@@ -7,6 +7,7 @@ EAPI=6
 QT5_MODULE="qtbase"
 
 inherit qt5-build
+KEYWORDS="~amd64 ~x86"
 
 DESCRIPTION="The Qt toolkit is a comprehensive C++ application development framework"
 
